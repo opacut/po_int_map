@@ -1,0 +1,98 @@
+@import "node_modules/ol/ol.css";
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+html, body, #map-container {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+#tools {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+#tools a {
+  display: inline-block;
+  padding: 0.5rem;
+  background: white;
+  cursor: pointer;
+}
+.ol-popup {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: greenyellow;
+  position: absolute;
+  background-color: darkslategrey;
+  background-image: url('images/popup_background.png');
+  background-size: cover;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid black;
+  /*border-color: black;*/
+  border-width: 5px;
+  border-style: solid;
+  /*
+  border-image-slice: 135 42 135 42;
+  border-image-width: 70px 35px 70px 35px;
+  border-image-outset: 67px 30px 69px 30px;
+  border-image-repeat: stretch;
+  border-image-source: url('images/baroque_frame.png');
+  */
+  bottom: 12px;
+  left: -50px;
+  min-width: 280px;
+}
+/*
+.ol-popup:after, .ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.ol-popup:after {
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+.ol-popup:before {
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+*/
+.ol-popup-closer {
+  text-decoration: none;
+  position:absolute;
+  text-align: right;
+  top: 2px;
+  right: 8px;
+  color: greenyellow;
+}
+.ol-popup-closer:after {
+  font-size: smaller;
+  content: "[close]";
+}
+.ol-popup-closer:hover {
+  color: white;
+}
+.leaflet-popup-tip {
+  width: 0px;
+  height: 0px;
+}
